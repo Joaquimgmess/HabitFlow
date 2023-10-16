@@ -70,13 +70,13 @@ function Calendar({habit, habitStreak}: {habit: string, habitStreak: Record<stri
     <section className="w-full my-2 rounded-md bg-neutral-800">
       <div className="flex justify-between mx-2 my-4 font-sans text-neutral-400">
         <button onClick={goToPreviusMonth}>
-          <ArrowIcon width={12} height={12} className="stroke-neutral-400"/>
+          <ArrowIcon width={13} height={12} className="stroke-neutral-400"/>
         </button>
           <span>
             {getFullDateString()}
           </span>
           <button onClick={goToNextMonth}>
-            <ArrowIcon width={12} height={12} className="rotate-180 stroke-neutral-400" />
+            <ArrowIcon width={13} height={12} className="rotate-180 stroke-neutral-400" />
           </button>
       </div>
       <div className="grid w-full grid-cols-7 bg-neutral-800 mt-2">

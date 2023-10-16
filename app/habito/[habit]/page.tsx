@@ -17,7 +17,7 @@ async function Habit({params: {habit}} : { params: {habit: string}}) {
   <main className="container relative flex flex-col gap-8 px-12 pt-16">
     <h1 className=" text-2xl font-light text-white font-display text-center">{decodedHabit}	</h1>
     <Link  className ="flex items-center font-sans text-xs text-neutral-300 text-center gap-1" href="/"> 
-    <ArrowIcon className="" width={15} height={15} />
+    <ArrowIcon className="" width={15} height={14} />
     Voltar 
     </Link>
     

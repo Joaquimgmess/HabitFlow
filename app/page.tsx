@@ -3,7 +3,7 @@ import DayState from "@/components/DayState";
 import Link from "next/link";
 import { kv } from "@vercel/kv";
 
-type Habits = {
+export type Habits = {
   [habit: string] : Record<string, boolean>} | null;
 
 export default async function Home() {
@@ -43,6 +43,7 @@ export default async function Home() {
                 <Image src="/images/delete.svg" width={20} height={20} alt="Delete" />
               </button>
             </div>
+            <Link href={`habito/${habit}`}>
             <section className="grid grid-cols-7 bg-neutral-800 rounded-md p-2 gap-2">
               {sortedWeekDays.map((day, index) => (
                 <div key={day} className="flex flex-col last:font-bold">
@@ -52,6 +53,7 @@ export default async function Home() {
                 </div>
               ))}
             </section>
+            </Link>
           </div>
         ))
       )}

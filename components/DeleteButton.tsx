@@ -7,7 +7,7 @@ function DeleteButton({ habit }: { habit: string }) {
   return (
     <button onClick={() => deleteHabit(habit)}>
       <Image
-        src="/images/delete.svg"
+        src="/images/trash.svg"
         width={20}
         height={20}
         alt="Ícone de lixeira vermelha"

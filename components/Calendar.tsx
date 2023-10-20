@@ -62,7 +62,6 @@ function Calendar({habit, habitStreak}: {habit: string, habitStreak: Record<stri
   }
 
   function getDayString(day: Date) {
-    console.log(`${year.toString()}-${(month +1).toString().padStart(2, "0")}-${day.getDate().toString().padStart(2, "0")}`)
     return `${year.toString()}-${(month +1).toString().padStart(2, "0")}-${day.getDate().toString().padStart(2, "0")}`
   }
 

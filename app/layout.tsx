@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dosis.variable} ${inter.variable} flex items-center flex-col mt-10 bg-neutral-900`}>
-        <Image src="/images/image.svg" alt="Logo" width={200} height={200} />
+        <Image src="/images/image.svg" alt="Logo" width={200} height={200}  />
         {children}</body>
     </html>
   )
